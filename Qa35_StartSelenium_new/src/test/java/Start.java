@@ -98,18 +98,43 @@ public class Start {
 
         // find items
         WebElement item1 = wd.findElement(By.cssSelector("a[href='#item1']"));
-        WebElement item2 ;
-        WebElement item3 ;
-        WebElement item4 ;
+        WebElement item1_1 = wd.findElement(By.linkText("Item 1"));
+        WebElement item1_2 = wd.findElement(By.cssSelector("#nav ul :first-child"));
+
+        WebElement item2 = wd.findElement(By.cssSelector("a[href='#item2']"));
+        WebElement item2_1 = wd.findElement(By.linkText("Item 2"));
+        WebElement item2_2 = wd.findElement(By.cssSelector("#nav ul :nth-child(2)"));
+
+        WebElement item3 = wd.findElement(By.cssSelector("a[href='#item3']"));
+        WebElement item3_1 = wd.findElement(By.linkText("Item 3"));
+        WebElement item3_2 = wd.findElement(By.cssSelector("#nav ul :nth-child(3)"));
+
+        WebElement item4 = wd.findElement(By.cssSelector("a[href='#item4']"));
+        WebElement item4_1 = wd.findElement(By.linkText("Item 4"));
+        WebElement item4_2 = wd.findElement(By.cssSelector("#nav ul :last-child"));
+
         //find element of form
-        WebElement name;
-        WebElement surename;
-        WebElement send;
+        WebElement name = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
+        WebElement name1 = wd.findElement(By.name("name"));
+        WebElement name2= wd.findElement(By.cssSelector("#form1 :first-child"));
+
+        WebElement surename = wd.findElement(By.cssSelector("[placeholder='Type your surename']"));
+        WebElement surename1 = wd.findElement(By.name("surename"));
+        WebElement surename2 = wd.findElement(By.cssSelector("#form1 :nth-child(2)"));
+
+
+        WebElement send = wd.findElement(By.cssSelector("button.btn"));
+        WebElement send1 = wd.findElement(By.className("btn"));
+        WebElement send2 = wd.findElement(By.cssSelector("#form1 :nth-child(3)"));
+
 
         // ****** find from table
-        WebElement poland;
+        WebElement poland = wd.findElement(By.cssSelector("#country-table tbody :nth-child(4) :first-child"));
 
 
+
+
+        wd.close();
         wd.quit();
     }
 }
