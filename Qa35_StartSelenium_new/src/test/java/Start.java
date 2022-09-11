@@ -74,7 +74,7 @@ public class Start {
 
         wd.findElement(By.cssSelector("[href='/home']"));
 
-        wd.findElement(By.cssSelector("[href ^='/ho']")); // start with /ho
+        wd.findElement(By.cssSelector("[href ^='/ho']")); // a[starts-with(@href,'/ho')]  // start with /ho
         wd.findElement(By.cssSelector("[href *='om']")); // containce - om
         wd.findElement(By.cssSelector("[href $='me']"));  // end of me
 
@@ -130,8 +130,11 @@ public class Start {
 
         // ****** find from table
         WebElement poland = wd.findElement(By.cssSelector("#country-table tbody :nth-child(4) :first-child"));
-
-
+       //////////
+        List<WebElement>list = wd.findElements(By.tagName("td"));
+        WebElement element1 = list.get(9); //poland
+        String text = element1.getText();
+        System.out.println(text);
 
 
         wd.close();
