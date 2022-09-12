@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tables" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-09-12T10:09:55" hostname="DESKTOP-FMI0Q92" time="82.615">
+  <properties/>
+  <testcase name="homeWorkTable" classname="Tables" time="6.446"/>
+  <testcase name="wschoolTables" classname="Tables" time="76.162"/>
+  <system-out><![CDATA[Count of rows = 4
+Last rows: Poland Chine Mexico
+Count of columns = 3
+Text: Israel
+Count of rows 7
+Last rows: Magazzini Alimentari Riuniti Giovanni Rovelli Italy
+Count of columns 3
+Text: Canada
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 56530
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1662977399.867][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+сент. 12, 2022 1:10:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+сент. 12, 2022 1:10:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 105, so returning the closest version found: 104
+сент. 12, 2022 1:10:00 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 105 of 104
+Starting ChromeDriver 104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307}) on port 55624
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1662977403.597][WARNING]: This version of ChromeDriver has not been tested with Chrome version 105.
+сент. 12, 2022 1:10:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected upstream dialect: W3C
+сент. 12, 2022 1:10:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 105, so returning the closest version found: 104
+сент. 12, 2022 1:10:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Found CDP implementation for version 105 of 104
+]]></system-err>
+</testsuite>

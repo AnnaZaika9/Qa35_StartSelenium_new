@@ -101,6 +101,7 @@ public class Start {
         WebElement item1_1 = wd.findElement(By.linkText("Item 1"));
         WebElement item1_2 = wd.findElement(By.cssSelector("#nav ul :first-child"));
 
+
         WebElement item2 = wd.findElement(By.cssSelector("a[href='#item2']"));
         WebElement item2_1 = wd.findElement(By.linkText("Item 2"));
         WebElement item2_2 = wd.findElement(By.cssSelector("#nav ul :nth-child(2)"));
@@ -111,12 +112,14 @@ public class Start {
 
         WebElement item4 = wd.findElement(By.cssSelector("a[href='#item4']"));
         WebElement item4_1 = wd.findElement(By.linkText("Item 4"));
-        WebElement item4_2 = wd.findElement(By.cssSelector("#nav ul :last-child"));
+        WebElement item4_2 = wd.findElement(By.cssSelector("#nav ul :nth-child(4)"));
+
 
         //find element of form
         WebElement name = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
         WebElement name1 = wd.findElement(By.name("name"));
         WebElement name2= wd.findElement(By.cssSelector("#form1 :first-child"));
+
 
         WebElement surename = wd.findElement(By.cssSelector("[placeholder='Type your surename']"));
         WebElement surename1 = wd.findElement(By.name("surename"));
@@ -130,11 +133,16 @@ public class Start {
 
         // ****** find from table
         WebElement poland = wd.findElement(By.cssSelector("#country-table tbody :nth-child(4) :first-child"));
+        String textP = poland.getText();
+        System.out.println(textP);
        //////////
+        /*
         List<WebElement>list = wd.findElements(By.tagName("td"));
         WebElement element1 = list.get(9); //poland
         String text = element1.getText();
         System.out.println(text);
+
+         */
 
 
         wd.close();
