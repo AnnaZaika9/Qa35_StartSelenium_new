@@ -16,6 +16,7 @@ public class HomeWork {
 
         wd.findElement(By.cssSelector("[href ^='/ho']"));
         wd.findElement(By.xpath("//*[contains(@href,'/ho')]"));
+        wd.findElement(By.xpath("//*[starts-with(@href,'/ho')]"));
 
         wd.findElement(By.cssSelector("div.focus"));
         wd.findElement(By.xpath("//div[@class='focus']"));
@@ -26,8 +27,8 @@ public class HomeWork {
         wd.findElement(By.cssSelector("div #host"));
         wd.findElement(By.xpath("//div//*[@id='host']"));
 
-        wd.findElement(By.cssSelector("table#country tr:nt-child(3)) td:last-child"));
-        wd.findElement(By.xpath("//table[@id='country']//td[last()]"));
+        wd.findElement(By.cssSelector("table#country tr:nt-child(3) td:last-child"));
+        wd.findElement(By.xpath("//table[@id='country']//tr[3]//td[last()]"));
 
         wd.findElement(By.cssSelector("div#idName li:first-child"));
         wd.findElement(By.xpath("//div[@id='idName']//li[1]"));
